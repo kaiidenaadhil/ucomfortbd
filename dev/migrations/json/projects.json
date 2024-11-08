@@ -1,0 +1,8 @@
+{
+    "projectId": "integer|primary_key|auto_increment",
+    "projectFlagCode": "string|max:255",
+    "projectImage": "string|max:255",
+    "projectCountryName": "string|max:255",
+    "projectUpdated": "timestamp",
+    "projectIdentify": "string"
+}

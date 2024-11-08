@@ -1,0 +1,613 @@
+:root {
+  --xs: 320px;
+  --s: 576px;
+  --m: 768px;
+  --l: 992px;
+  --xl: 1200px;
+  --watch: 320px;
+  --phone: 576px;
+  --tablet: 768px;
+  --laptop: 992px;
+  --desktop: 1200px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;300;700&display=swap');
+/* Extra small devices (phones, 320px and up) */
+@media only screen and (min-width: 320px) {
+  /* Add styles here */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+  /* Add styles here */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* Add styles here */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* Add styles here */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* Add styles here */
+}
+
+/* Styles for header and logo */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Encode Sans', sans-serif;
+}
+main{
+  background: #dfdfdf;
+}
+.container {
+  width: 1200px;
+  margin: 0px auto;
+}
+
+header {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
+}
+a{
+  color:#1d4b40;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+a:hover{
+  color:#d34f2d;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+p{
+  font-size: 1.1rem;
+  text-align: justify;
+  line-height: 1.7rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 1rem;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 120px;
+    padding: 0.5rem 0rem;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  position: relative;
+
+}
+
+.menu a {
+  display: block;
+  padding: 1.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu li.has-submenu>a::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #333;
+  vertical-align: middle;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
+  z-index: 20;
+}
+
+.submenu li {
+  margin: 0;
+  list-style: none;
+}
+
+.submenu a {
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu li.has-submenu:hover>a::after {
+  border-left-color: #f1f1f1;
+}
+
+.menu li:hover>.submenu {
+  display: block;
+}
+
+.menu li:hover>a {
+  background-color: #f1f1f1;
+}
+
+.toggle {
+  display: none;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  position: relative;
+}
+
+.toggle span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.toggle span:nth-child(1) {
+  top: 0px;
+}
+
+.toggle span:nth-child(2),
+.toggle span:nth-child(3) {
+  top: 11px;
+}
+
+.toggle span:nth-child(3) {
+  top: 22px;
+}
+
+.toggle.active span:nth-child(1) {
+  top: 11px;
+  transform: rotate(45deg);
+}
+
+.toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.toggle.active span:nth-child(3) {
+  top: 11px;
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    width: 100%;
+    margin: 0px auto;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  nav {
+    padding: 1rem 3rem;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 4.2rem;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu li {
+    position: static;
+  }
+
+  .menu a {
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .menu li:hover>.submenu {
+    display: flex;
+    position: static;
+  }
+
+  .toggle {
+    display: block;
+  }
+
+  .logo {
+    text-align: center;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 576px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.5rem;
+  }
+}
+
+.footer {
+  background-color: #f7f7f7;
+  padding: 40px 0;
+}
+
+.footer h4 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #666;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: #333;
+}
+
+.footer hr {
+  border-top: 1px solid #ddd;
+}
+
+.footer p {
+  margin-bottom: 0;
+  color: #666;
+  text-align: center;
+  padding: 1rem;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px
+}
+
+.codeblock{
+  margin: 1rem;
+  width:100%;
+  min-height:120px;
+  box-shadow: 1px 3px 25px 3px rgba(0,0,0,0.59);
+  border-radius: 0.5rem;
+  transition: background-color 0.5s ease-out;
+}
+.codeblock-head{
+  background: white;
+        padding: 1rem 0rem 1.5rem 1rem;
+        border-top-right-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
+}
+.browser {
+  overflow: hidden;
+  width: 50%;
+  float: left;
+}
+
+.browser-info{
+  width: 50%;
+  float: left;
+  text-align: right;
+  color:black;
+}
+.browser-info h6{
+  padding: 0rem 1rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.codeblock-header{
+width: 100%;
+}
+
+.browser>span {
+  display: flex;
+  position: relative;
+  width: .75rem;
+  height: .75rem;
+  background: #d34f2d;
+  border-radius: 50%;
+}
+
+.browser>span::before,.browser>span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  display: block;
+  width: .75rem;
+  height: .75rem;
+  background: #f7cc76;
+  border-radius: 50%
+}
+
+.browser>span::after {
+  left: 3rem;
+  background: #1d4b40
+}
+
+.codeblock-body{
+  height: 300px;
+  overflow-y: scroll;
+  width: auto;
+  background: #343f50;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding: 1rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+
+
+  scrollbar-width: 12px;
+  scrollbar-color: #bfbfbf #f2f2f2;
+  cursor: pointer;
+}
+
+.codeblock-body::-webkit-scrollbar {
+  width: 10px;
+}
+
+.codeblock-body::-webkit-scrollbar-thumb {
+  background-color: #343f50;
+  border-radius: 5px;
+}
+
+.codeblock-body::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+}
+
+
+
+
+
+.rightPortion{
+  position: relative;
+}
+.rightPortion > div:first-child {
+  /* CSS properties for the first child element */
+  position: absolute;
+  top:1rem;
+  right:1rem;
+  background-color: blue;
+  transition-delay: 0.3s;
+}
+
+.rightPortion > div:nth-child(2) {
+  /* CSS properties for the second child element */
+  position: absolute;
+  top:3rem;
+  right:3rem;
+  background-color: blue;
+  transition-delay: 0.3s;
+}
+
+.rightPortion > div:nth-of-type(3) {
+  /* CSS properties for the third child element */
+  position: absolute;
+  top:5rem;
+  right:5rem;
+  background-color: blue;
+  transition-delay: 0.3s;
+}
+
+
+.rightPortion > div:first-child:hover {
+  /* CSS properties for the first child element */
+ z-index: 10;
+}
+
+.rightPortion > div:nth-child(2):hover  {
+  /* CSS properties for the second child element */
+  z-index: 10;
+}
+
+.rightPortion > div:nth-of-type(3):hover  {
+  /* CSS properties for the third child element */
+  z-index: 10;
+}
+
+.textarea {
+  width:100%;
+  font-size:0.9rem;
+  padding:0.5rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  background:black;
+  color:white;
+  overflow-y: scroll;
+  scrollbar-width: 12px;
+  scrollbar-color: #bfbfbf #f2f2f2;
+  cursor: pointer;
+}
+
+.textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+  background-color: #343f50;
+  border-radius: 5px;
+}
+
+.textarea::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+}
+
+.buttonN{
+  background: #000;
+  padding: 0.4em 2.5em .4em 1em;
+  border: 1px solid #000;
+  border-radius: 3em;
+  text-align: left;
+  color: #ffffff;
+  position: relative;
+  display: inline-table;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.buttonN:hover {
+  background: #ffffff;
+  padding: 0.4em 2.5em .4em 1em;
+  border: 1px solid #000;
+  border-radius: 3em;
+  text-align: left;
+  color: #000;
+  position: relative;
+  display: inline-table;
+}
+
+.buttonN:active:after,
+.btn_hairline_inverse:hover:after {
+  background-image: url(https://lab.themornstar.com/assets/logo/arrow_r.svg);
+}
+
+.buttonN:after {
+  content: '';
+  background: transparent url(https://lab.themornstar.com/assets/logo/arrow_r_white.svg) no-repeat right center;
+  background-size: 39px;
+  display: block;
+  width: 24px;
+  height: 22px;
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+
+.buttonI {
+  background: transparent;
+  padding: 0.4em 2.5em .4em 1em;
+  border: 1px solid #000;
+  border-radius: 3em;
+  text-align: left;
+  color: #000;
+  position: relative;
+  display: inline-table;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.buttonI:hover {
+  background: #000;
+  padding: 0.4em 2.5em .4em 1em;
+  border: 1px solid #000;
+  border-radius: 3em;
+  text-align: left;
+  color: #ffffff;
+  position: relative;
+  display: inline-table;
+}
+
+.buttonI:active:after,
+.buttonI:hover:after {
+  background-image: url(https://lab.themornstar.com/assets/logo/arrow_r_white.svg);
+}
+
+.buttonI:after {
+  content: '';
+  background: transparent url(https://lab.themornstar.com/assets/logo/arrow_r.svg) no-repeat right center;
+  background-size: 39px;
+  display: block;
+  width: 24px;
+  height: 22px;
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

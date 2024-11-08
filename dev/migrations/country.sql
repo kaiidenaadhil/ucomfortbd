@@ -1,0 +1,1 @@
+CREATE TABLE country (`countryId` INT PRIMARY KEY NOT NULL AUTO_INCREMENT, `countryName` VARCHAR(255)  NOT NULL, `countryShortName` VARCHAR(255)  NOT NULL, `DialCode` VARCHAR(255)  NOT NULL, `CountrySerial` VARCHAR(255)  NOT NULL, `countryUpdated` TIMESTAMP  NOT NULL, `countryIdentify` VARCHAR(255)  NOT NULL)

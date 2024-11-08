@@ -1,0 +1,1 @@
+CREATE TABLE subcategories (`subcategoryId` INT PRIMARY KEY NOT NULL AUTO_INCREMENT, `subcategoryName` VARCHAR(255)  NOT NULL, `subcategoryDesc` VARCHAR(255)  NOT NULL, `subcategoryUri` VARCHAR(255)  NOT NULL, `subcategoryFeatureImage` VARCHAR(255)  NOT NULL, `subcategoryUpdated` TIMESTAMP  NOT NULL, `subcategoryIdentify` VARCHAR(255)  NOT NULL)

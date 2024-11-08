@@ -1,0 +1,115 @@
+<style>
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.features-description {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 300;
+    background: linear-gradient(90deg, #f05a28, #8e44ad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.description {
+    font-size: 18px;
+    color: #666;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.shop-now {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f05a28;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.shop-now:hover {
+    color: #8e44ad;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ekit-svg-shape {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    transform-origin: center;
+}
+
+#animated-path {
+    animation: morphingPath 8s infinite alternate ease-in-out;
+}
+
+@keyframes morphingPath {
+    0% {
+        d: path("M149.85595979315374 18.0384068690545C184.23780496184114 27.47941863478643 199.9759684222029 69.72471388905072 199.64749355883583 93.0787222165726C199.32720242196186 107.7737944234988 196.81142092882243 159.74077095479709 143.06366289197476 190.05755024884814C131.8675746481809 195.97269961806091 85.19549552212375 213.59399236282732 42.841229779055816 174.55677085873495C24.195917282228688 157.7848251923513 7.3498238095891395 123.74922806573639 1.7431684502298537 91.22497947953374C-3.2450495065253877 62.553006918165686 2.0202375064695337 12.635165682063812 25.70304351384403 3.403912567342031C48.91568461209208 -6.787632361693176 56.98821163856443 20.514442472111817 74.17735310169937 25.933588908493558C94.6349812859967 32.50417061449804 115.93467052914741 11.873805979268278 149.85595979315374 18.0384068690545Z");
+    }
+    100% {
+        d: path("M50.14404020684626 181.9615931309455C15.762195038158863 172.52058136521357 0.024031577797107747 130.27528611094928 0.3525064411641718 106.9212777834274C0.6727975780381435 92.22620557650121 3.1885790711775757 40.25922904520291 56.93633710802523 9.942449751151864C68.1324253518191 4.027300381939088 114.80450447787625 -13.59399236282732 157.15877022094418 25.443229141265053C175.8040827177713 42.2151748076487 192.65017619041086 76.25077193426361 198.25683154977015 108.77502052046626C203.2450495065254 137.44699308183431 197.97976249353047 187.36483431793618 174.296956486156 196.596087432658C151.08431538790792 206.78763236169317 143.01178836143557 179.48555752788818 125.82264689830063 174.06641109150645C105.3650187140033 167.49582938550197 84.0653294708526 188.1261940207317 50.14404020684626 181.9615931309455Z");
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .features-description {
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .ekit-svg-shape {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+</style> <div class="container">
+    <div class="features-description">
+        <h2 class="title">Bathware</h2>
+        <p class="description">
+            Versatile bathware epitomizes opulence and refinement in the realm of bathroom design. From extravagant freestanding bathtubs to sleek, high-tech shower systems, every element is meticulously crafted.
+        </p>
+        <a href="#" class="shop-now">Shop Now</a>
+    </div>
+    
+    <div class="image-container">
+        <!-- SVG apple-like shape with morphing animation -->
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="ekit-svg-shape">
+            <clipPath id="shape-morphing-3321ebf">
+                <!-- Path that will animate -->
+                <path id="animated-path" d="M149.85595979315374 18.0384068690545C184.23780496184114 27.47941863478643 199.9759684222029 69.72471388905072 199.64749355883583 93.0787222165726C199.32720242196186 107.7737944234988 196.81142092882243 159.74077095479709 143.06366289197476 190.05755024884814C131.8675746481809 195.97269961806091 85.19549552212375 213.59399236282732 42.841229779055816 174.55677085873495C24.195917282228688 157.7848251923513 7.3498238095891395 123.74922806573639 1.7431684502298537 91.22497947953374C-3.2450495065253877 62.553006918165686 2.0202375064695337 12.635165682063812 25.70304351384403 3.403912567342031C48.91568461209208 -6.787632361693176 56.98821163856443 20.514442472111817 74.17735310169937 25.933588908493558C94.6349812859967 32.50417061449804 115.93467052914741 11.873805979268278 149.85595979315374 18.0384068690545Z"></path>
+            </clipPath>
+            <g clip-path="url(#shape-morphing-3321ebf)">
+                <image class="ekit-morphing-image" href="https://bd.swish.global/wp-content/uploads/2023/06/WC0200113-00-reswized.jpg" width="100%" height="100%" preserveAspectRatio="none"></image>
+            </g>
+        </svg>
+    </div>
+</div>

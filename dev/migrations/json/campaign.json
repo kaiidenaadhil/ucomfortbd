@@ -1,0 +1,8 @@
+{
+    "campaignId": "integer|primary_key|auto_increment",
+    "campainTitle": "string|max:255",
+    "campaignSubtitle": "string|max:255",
+    "campaignMedia": "string|max:255",
+    "campaignUpdated": "timestamp",
+    "campaignIdentify": "string"
+}

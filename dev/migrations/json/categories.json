@@ -1,0 +1,9 @@
+{
+    "categoryId": "integer|primary_key|auto_increment",
+    "categoryName": "string",
+    "categoryDesc": "string",
+    "categoryUri": "string",
+    "categoryFeatureImage": "string",
+    "categoryUpdated": "timestamp",
+    "categoryIdentify": "string"
+}

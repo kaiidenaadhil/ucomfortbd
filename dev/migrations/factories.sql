@@ -1,0 +1,1 @@
+CREATE TABLE factories (`factoryId` INT PRIMARY KEY NOT NULL AUTO_INCREMENT CHECK (LENGTH(factoryId) <= 10), `factoryTitle` VARCHAR(255)  NOT NULL CHECK (LENGTH(factoryTitle) <= 100), `factoryImg` VARCHAR(255)  NOT NULL CHECK (LENGTH(factoryImg) <= 100), `factoryUpdated` TIMESTAMP  NOT NULL, `factoryIdentify` VARCHAR(255)  NOT NULL)

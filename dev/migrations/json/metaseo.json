@@ -1,0 +1,14 @@
+{
+    "id": "integer|primary_key|auto_increment",
+    "pageSlug": "string",
+    "metaTitle": "string",
+    "metaDescription": "string",
+    "metaKeywords": "string",
+    "imageFeature": "string",
+    "imageAlt": "string",
+    "imageCaption": "string",
+    "canonicalURL": "string",
+    "metaAuthor": "string",
+    "metaseoUpdated": "timestamp",
+    "metaseoIdentify": "string"
+}

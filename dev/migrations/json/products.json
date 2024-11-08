@@ -1,0 +1,10 @@
+{
+    "productId": "integer|primary_key",
+    "productName": "string|max:255",
+    "productDesc": "string|max:5000",
+    "productPrice": "string|max:255",
+    "productImage": "string|max:255",
+    "productTags": "string|max:255",
+    "productUpdated": "timestamp",
+    "productIdentify": "string"
+}

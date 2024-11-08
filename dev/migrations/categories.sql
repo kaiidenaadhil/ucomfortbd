@@ -1,0 +1,1 @@
+CREATE TABLE categories (`categoryId` INT PRIMARY KEY NOT NULL AUTO_INCREMENT, `categoryName` VARCHAR(255)  NOT NULL, `categoryDesc` VARCHAR(255)  NOT NULL, `categoryUri` VARCHAR(255)  NOT NULL, `categoryFeatureImage` VARCHAR(255)  NOT NULL, `categoryUpdated` TIMESTAMP  NOT NULL, `categoryIdentify` VARCHAR(255)  NOT NULL)

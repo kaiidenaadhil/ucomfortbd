@@ -1,0 +1,1 @@
+CREATE TABLE phone (`phoneId` INT PRIMARY KEY NOT NULL AUTO_INCREMENT, `phoneNumber` VARCHAR(255)  NOT NULL CHECK (LENGTH(phoneNumber) <= 100), `phoneUpdated` TIMESTAMP  NOT NULL, `phoneIdentify` VARCHAR(255)  NOT NULL)

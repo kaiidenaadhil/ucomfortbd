@@ -1,0 +1,9 @@
+{
+    "subcategoryId": "integer|primary_key|auto_increment",
+    "subcategoryName": "string",
+    "subcategoryDesc": "string",
+    "subcategoryUri": "string",
+    "subcategoryFeatureImage": "string",
+    "subcategoryUpdated": "timestamp",
+    "subcategoryIdentify": "string"
+}

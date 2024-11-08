@@ -1,0 +1,9 @@
+{
+    "clientId": "integer|primary_key|auto_increment",
+    "clientName": "string|max:255",
+    "clientEmail": "string|max:255",
+    "whatsapp": "string|max:255",
+    "clientMessage": "string|max:50000",
+    "clientUpdated": "timestamp",
+    "clientIdentify": "string"
+}

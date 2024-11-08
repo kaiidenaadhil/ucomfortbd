@@ -1,0 +1,1 @@
+CREATE TABLE milestone (`milestoneId` INT PRIMARY KEY NOT NULL AUTO_INCREMENT, `milestoneName` VARCHAR(255)  NOT NULL CHECK (LENGTH(milestoneName) <= 255), `milestoneStart` TIMESTAMP  NOT NULL, `milestoneStatus` VARCHAR(255)  NOT NULL, `milestoneUpdated` TIMESTAMP  NOT NULL, `milestoneIdentify` VARCHAR(255)  NOT NULL)

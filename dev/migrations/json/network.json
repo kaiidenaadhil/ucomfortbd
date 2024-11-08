@@ -1,0 +1,12 @@
+{
+    "networkId": "integer|primary_key|auto_increment",
+    "networkTitle": "string|max:255",
+    "neworkCountry": "string|max:255",
+    "networkCity": "string|max:255",
+    "networkStore": "string|max:255",
+    "networkPhone": "string|max:255",
+    "networkAddress": "string|max:500",
+    "networkImage": "string|max:255",
+    "networkUpdated": "timestamp",
+    "networkIdentify": "string"
+}
